@@ -1,23 +1,87 @@
 aid: calibra-medical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/calibra-medical.png
 name: Calibra Medical
-description: Calibra Medical is a company surfaced as a portfolio company of canaan-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Calibra Medical, Inc. was a Redwood City, California medical device company
+  founded in 2004 to make mealtime insulin therapy simpler and more discreet. Its product
+  was the Finesse "patch-pen", a fully mechanical, three-day wearable bolus insulin delivery
+  patch (roughly 2 x 1 x 0.25 inches, 200-unit reservoir, no batteries, display, or handheld
+  controller) dosed by pressing two buttons. Backed by Canaan Partners, Frazier Healthcare
+  Partners, Intersouth Partners, Skyline Ventures, and Three Arch Partners, the company raised
+  approximately $61.5M before Johnson & Johnson acquired it in a reported $77M all-cash deal
+  in 2012, folding it into the J&J Diabetes Care Companies. J&J rebranded the device OneTouch
+  Via but never commercially launched it, and on July 17, 2018 sold select Calibra Medical
+  assets and an exclusive worldwide license to Swiss wearable-insulin firm CeQur. Calibra
+  Medical no longer operates as an independent company: it publishes no developer portal,
+  no API, and no public source repositories, and the calibramedical.com domain now resolves
+  to a parked "domain may be for sale" page. This profile is retained as a historical
+  medical-device company record with no API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/calibra-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - canaan-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: acquired
+x-founded: '2004'
+x-headquarters: Redwood City, California, United States
+x-acquisition:
+- acquirer: Johnson & Johnson
+  year: '2012'
+  detail: Reported $77M all-cash acquisition; operated as one of the J&J Diabetes Care
+    Companies. Device rebranded OneTouch Via but never commercially launched.
+- acquirer: CeQur SA
+  date: '2018-07-17'
+  detail: Acquired select assets of Calibra Medical, Inc. plus an exclusive worldwide
+    license to the wearable on-demand insulin delivery system formerly known as OneTouch Via.
+  source: https://www.prnewswire.com/news-releases/cequr-acquires-assets-from-calibra-medical-inc-300681711.html
+x-investors:
+- Canaan Partners
+- Frazier Healthcare Partners
+- Intersouth Partners
+- Skyline Ventures
+- Three Arch Partners
+x-former-domain: calibramedical.com
+x-domain-status: parked-for-sale
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Medical Devices
+- Diabetes
+- Insulin Delivery
+- Health
+- Wearables
+- Drug Delivery
+- Acquired
 apis: []
+common: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
+  notes: 'Searched company history, the Canaan Partners portfolio page, and the acquisition
+    record; probed calibramedical.com (HTTP 200, parked "domain may be for sale" page),
+    /.well-known/security.txt, /.well-known/openid-configuration, /.well-known/api-catalog,
+    and /llms.txt (all HTTP 404), plus GitHub orgs calibra-medical and calibramedical (both
+    HTTP 404). No API, developer portal, SDK, or public repository surface exists. Company
+    defunct as an independent entity since the 2012 Johnson & Johnson acquisition; assets
+    sold to CeQur 2018-07-17.'
